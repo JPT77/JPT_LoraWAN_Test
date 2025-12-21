@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121" name="Debug" parent="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug" prebuildStep="">
+					<folderInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121." name="/" resourcePath="">
+						<toolChain id="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.debug.540651586" name="MCU ARM GCC" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.debug">
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu.796599751" name="MCU" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu" useByScannerDiscovery="true" value="STM32WLE5JBIx" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid.1955990138" name="CPU" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid" useByScannerDiscovery="false" value="0" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid.162761874" name="Core" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid" useByScannerDiscovery="false" value="0" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.1445599491" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="genericBoard" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.1640662131" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.4 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || STM32WLE5JBIx || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32WLxx_HAL_Driver/Inc | ../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32WLxx/Include | ../Drivers/CMSIS/Include ||  ||  || CORE_CM4 | USE_HAL_DRIVER | STM32WLE5xx ||  || Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32WLE5JBIX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.converthex.1782878815" name="Convert to Intel Hex file (-O ihex)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.converthex" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.1138894051" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
+							<builder buildPath="${workspace_loc:/LoRIS-BM-TRXC1}/Debug" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.1214269313" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.1305367897" name="MCU GCC Assembler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.592927049" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.value.g3" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.includepaths.710124024" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.includepaths" useByScannerDiscovery="false" valueType="includePath"/>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.899881933" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.93315367" name="MCU GCC Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.1735292536" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.value.g3" valueType="enumerated"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.302710988" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.value.os" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols.1351830056" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="CORE_CM4"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32WLE5xx"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.591634467" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/LoRaWAN/App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/LoRaWAN/Target&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/STM32WLxx_HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/STM32WLxx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/CMSIS/Device/ST/STM32WLxx/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/trace/adv_trace&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/misc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/sequencer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/timer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/lpm/tiny_lpm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/LmHandler/Packages&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/SubGHz_Phy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Crypto&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Mac/Region&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Mac&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/LmHandler&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Utilities&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Application/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Base/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Config/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Flash/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/LED/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Peripherals/ADC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Peripherals/GPIO&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Peripherals/I2C&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Peripherals/RTC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Peripherals/Timer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Peripherals/USART&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Sensors/HDC2080/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Sensors/NTC_103AT_2B/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/ELV-Application-Modules/ELV-AM-TH1/inc&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includefiles.923731574" name="Include files (-include)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includefiles" useByScannerDiscovery="false" valueType="includeFiles"/>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1320063091" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.157473392" name="MCU G++ Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.957138585" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.value.g3" valueType="enumerated"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.136792987" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.583946514" name="MCU GCC Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.21124737" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" useByScannerDiscovery="false" value="${workspace_loc:/${ProjName}/STM32WLE5JBIX_FLASH.ld}" valueType="string"/>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.input.1055236656" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.979863268" name="MCU G++ Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver.72739091" name="MCU GCC Archiver" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.size.1046647400" name="MCU Size" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.size"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objdump.listfile.9351887" name="MCU Output Converter list file" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objdump.listfile"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.hex.1609964619" name="MCU Output Converter Hex" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.hex"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.binary.2058286666" name="MCU Output Converter Binary" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.binary"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.verilog.1265440107" name="MCU Output Converter Verilog" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.verilog"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.srec.1978220845" name="MCU Output Converter Motorola S-rec" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.srec"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec.1177258146" name="MCU Output Converter Motorola S-rec with symbols" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.1136092639" name="stm32wl55xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.717908195" name="stm32wl54xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl54xx.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.60864158" name="stm32wle4xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wle4xx.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.814904167" name="LmhpRemoteMcastSetup.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.1602380891" name="FragDecoder.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/FragDecoder.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.1057399573" name="LmhPackage.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhPackage.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.1631458928" name="LmhpFragmentation.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpFragmentation.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.1704015188" name="LmhpFirmwareManagement.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.571843087" name="LmhpDataDistribution.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpDataDistribution.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.542246629" name="LmhpClockSync.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpClockSync.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry excluding="STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_timebase_tim_template.c|STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_timebase_rtc_wakeup_template.c|STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_timebase_rtc_alarm_template.c|STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_msp_template.c|CMSIS/Include|CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h|CMSIS/Device/ST/STM32WLxx/Include/stm32wl54xx.h|CMSIS/Device/ST/STM32WLxx/Include/stm32wle4xx.h|CMSIS/Device/ST/STM32WLxx/Source|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl54xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl54xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl55xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl55xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wle4xx.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wle5xx.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl54xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl54xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl55xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl55xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wle4xx.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wle5xx.s" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="LoRaWAN"/>
+						<entry excluding="Third_Party/LoRaWAN/LmHandler/Packages/LmhpDataDistribution.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpDataDistribution.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFragmentation.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFragmentation.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpClockSync.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpClockSync.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhPackage.h|Third_Party/LoRaWAN/LmHandler/Packages/FragDecoder.h|Third_Party/LoRaWAN/LmHandler/Packages/FragDecoder.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="User_Modules"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750" name="Release" parent="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release">
+					<folderInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750." name="/" resourcePath="">
+						<toolChain id="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release.1324267323" name="MCU ARM GCC" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.release">
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu.428434915" name="MCU" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu" useByScannerDiscovery="true" value="STM32WLE5JBIx" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid.814652794" name="CPU" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid" useByScannerDiscovery="false" value="0" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid.577753035" name="Core" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid" useByScannerDiscovery="false" value="0" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.1099114032" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="genericBoard" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.1803654395" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.4 || Release || false || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || STM32WLE5JBIx || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Core/Inc | ../Drivers/STM32WLxx_HAL_Driver/Inc | ../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy | ../Drivers/CMSIS/Device/ST/STM32WLxx/Include | ../Drivers/CMSIS/Include ||  ||  || CORE_CM4 | USE_HAL_DRIVER | STM32WLE5xx ||  || Drivers | Core/Startup | Core ||  ||  || ${workspace_loc:/${ProjName}/STM32WLE5JBIX_FLASH.ld} || true || NonSecure ||  || secure_nsclib.o ||  || None" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.961492703" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
+							<builder buildPath="${workspace_loc:/LoRIS-BM-TRXC1}/Release" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.2121246373" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.1480315397" name="MCU GCC Assembler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.1294081094" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.value.g0" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.includepaths.846876711" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.includepaths" valueType="includePath"/>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.131308109" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.132095124" name="MCU GCC Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.656706640" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.value.g0" valueType="enumerated"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.694245978" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.value.os" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols.1139381242" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="CORE_CM4"/>
+									<listOptionValue builtIn="false" value="USE_HAL_DRIVER"/>
+									<listOptionValue builtIn="false" value="STM32WLE5xx"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.1347672120" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Core/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/LoRaWAN/App&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/LoRaWAN/Target&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/STM32WLxx_HAL_Driver/Inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/STM32WLxx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/CMSIS/Device/ST/STM32WLxx/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/CMSIS/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/trace/adv_trace&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/misc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/sequencer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/timer&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Utilities/lpm/tiny_lpm&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/LmHandler/Packages&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/SubGHz_Phy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Crypto&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Mac/Region&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Mac&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/LmHandler&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Middlewares/Third_Party/LoRaWAN/Utilities&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Config/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Contact_Interface/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Base/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Sensors/HDC2080/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/Sensors/NTC_103AT_2B/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/User_Modules/ELV-Application-Modules/ELV-AM-TH1/inc&quot;"/>
+								</option>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.569565758" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.1394733347" name="MCU G++ Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.1282539868" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.value.g0" valueType="enumerated"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.895422441" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.value.os" valueType="enumerated"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.1722304274" name="MCU GCC Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.1030833529" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" value="${workspace_loc:/${ProjName}/STM32WLE5JBIX_FLASH.ld}" valueType="string"/>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.input.1971292795" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.1464706318" name="MCU G++ Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver.161598733" name="MCU GCC Archiver" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.size.177423439" name="MCU Size" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.size"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objdump.listfile.643659860" name="MCU Output Converter list file" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objdump.listfile"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.hex.1794616233" name="MCU Output Converter Hex" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.hex"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.binary.1709351036" name="MCU Output Converter Binary" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.binary"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.verilog.1815503336" name="MCU Output Converter Verilog" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.verilog"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.srec.1528520084" name="MCU Output Converter Motorola S-rec" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.srec"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec.351439162" name="MCU Output Converter Motorola S-rec with symbols" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.1150832043" name="stm32wl55xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.1720627933" name="stm32wl54xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl54xx.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.835764233" name="stm32wle4xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wle4xx.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.1628451674" name="LmhpRemoteMcastSetup.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.1179302748" name="FragDecoder.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/FragDecoder.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.1850082375" name="LmhPackage.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhPackage.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.67189105" name="LmhpFragmentation.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpFragmentation.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.1548470927" name="LmhpFirmwareManagement.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.131025703" name="LmhpDataDistribution.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpDataDistribution.h" toolsToInvoke=""/>
+					<fileInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.302458587" name="LmhpClockSync.h" rcbsApplicability="disable" resourcePath="Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpClockSync.h" toolsToInvoke=""/>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
+						<entry excluding="STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_timebase_tim_template.c|STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_timebase_rtc_wakeup_template.c|STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_timebase_rtc_alarm_template.c|STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_msp_template.c|CMSIS/Include|CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h|CMSIS/Device/ST/STM32WLxx/Include/stm32wl54xx.h|CMSIS/Device/ST/STM32WLxx/Include/stm32wle4xx.h|CMSIS/Device/ST/STM32WLxx/Source|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl54xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl54xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl55xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wl55xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wle4xx.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/arm/startup_stm32wle5xx.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl54xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl54xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl55xx_cm0plus.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wl55xx_cm4.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wle4xx.s|CMSIS/Device/ST/STM32WLxx/Source/Templates/iar/startup_stm32wle5xx.s" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="LoRaWAN"/>
+						<entry excluding="Third_Party/LoRaWAN/LmHandler/Packages/LmhpDataDistribution.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpDataDistribution.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFirmwareManagement.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFragmentation.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpFragmentation.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhpRemoteMcastSetup.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpClockSync.h|Third_Party/LoRaWAN/LmHandler/Packages/LmhpClockSync.c|Third_Party/LoRaWAN/LmHandler/Packages/LmhPackage.h|Third_Party/LoRaWAN/LmHandler/Packages/FragDecoder.h|Third_Party/LoRaWAN/LmHandler/Packages/FragDecoder.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Middlewares"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Utilities"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="LoRIS-BM-TRXC1.null.1155205043" name="LoRIS-BM-TRXC1"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/Make_ELV-BM-TRX1_Template"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/Make_ELV-BM-TRX1_Template"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1646477121.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.93315367;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1320063091">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1449634750.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.132095124;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.569565758">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
