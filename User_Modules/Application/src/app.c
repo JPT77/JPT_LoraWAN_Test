@@ -92,19 +92,46 @@ void app_send_tx_data_cb( void )
 
 void app_set_lorawan_payload( void )
 {
-  uint8_t u8_payload_idx = 0;
-  uint16_t bat = base_get_supply_level();
-
   LmHandlerAppData_t *app_data = base_get_app_data_ptr();
 
   app_data->Port = APP_LORAWAN_PORT;
 
-  app_data->Buffer[u8_payload_idx++] = base_get_tx_reason();     // TX-Reason
-  app_data->Buffer[u8_payload_idx++] = 0x00;                     // Reserved
-  app_data->Buffer[u8_payload_idx++] = 0x00;                     // Reserved
-  app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( bat >> 8 ); // Supply voltage (high byte)
-  app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( bat );      // Supply voltage (low byte)
+  uint8_t u8_payload_idx = 0;
 
+  // Byte 0: TX-Reason
+  app_data->Buffer[u8_payload_idx++] = base_get_tx_reason();
+
+  // Byte 1: TX Power (dBm)
+  int8_t i8_tx_power = 0;
+  LmHandlerGetTxPower( &i8_tx_power );
+  app_data->Buffer[u8_payload_idx++] = ( uint8_t ) i8_tx_power;
+
+  // Byte 2: Datarate (DR0-DR5)
+  int8_t i8_datarate = 0;
+  LmHandlerGetTxDatarate( &i8_datarate );
+  app_data->Buffer[u8_payload_idx++] = ( uint8_t ) i8_datarate;
+
+  // Byte 3: Spreading Factor (SF7-SF12)
+  // Spreading Factor aus Datarate ableiten (EU868: DR0=SF12, DR1=SF11, DR2=SF10, DR3=SF9, DR4=SF8, DR5=SF7)
+  uint8_t u8_spreading_factor = 12 - i8_datarate;
+  /*
+  if( u8_spreading_factor < 7 )
+  {
+    u8_spreading_factor = 7;  // Minimum SF7
+  }
+  if( u8_spreading_factor > 12 )
+  {
+    u8_spreading_factor = 12; // Maximum SF12
+  }*/
+  app_data->Buffer[u8_payload_idx++] = u8_spreading_factor;
+
+  // Byte 4: Supply voltage (high byte)
+  // Byte 5: Supply voltage (low byte)
+  uint16_t battery = base_get_supply_level();
+  app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( battery >> 8 );
+  app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( battery );
+
+ 
   app_data->BufferSize = u8_payload_idx;  // Watch out! The maximum payload size must not exceed 51 bytes!
 }
 
