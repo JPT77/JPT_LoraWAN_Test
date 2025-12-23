@@ -60,6 +60,9 @@ void app_init( void )
   app_eeprom_get_settings( &app_settings );
   app_settings_print( app_settings );
   
+  // Init the ELV-AM-TH1 depending hardware
+  elv_am_th1_init();
+
   // registriere neuen Task im scheduler (enum taskid, ?, callback)
   UTIL_SEQ_RegTask( ( 1 << CFG_SEQ_Task_lora_tx_task ), UTIL_SEQ_RFU, app_send_tx_data_cb );
 
@@ -111,27 +114,29 @@ void app_set_lorawan_payload( void )
   LmHandlerGetTxDatarate( &i8_datarate );
   app_data->Buffer[u8_payload_idx++] = ( uint8_t ) i8_datarate;
 
-  // Byte 3: Spreading Factor (SF7-SF12)
-  // Spreading Factor aus Datarate ableiten (EU868: DR0=SF12, DR1=SF11, DR2=SF10, DR3=SF9, DR4=SF8, DR5=SF7)
-  uint8_t u8_spreading_factor = 12 - i8_datarate;
-  /*
-  if( u8_spreading_factor < 7 )
-  {
-    u8_spreading_factor = 7;  // Minimum SF7
-  }
-  if( u8_spreading_factor > 12 )
-  {
-    u8_spreading_factor = 12; // Maximum SF12
-  }*/
-  app_data->Buffer[u8_payload_idx++] = u8_spreading_factor;
-
-  // Byte 4: Supply voltage (high byte)
-  // Byte 5: Supply voltage (low byte)
+  // Byte 3: Supply voltage (high byte)
+  // Byte 4: Supply voltage (low byte)
   uint16_t battery = base_get_supply_level();
   app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( battery >> 8 );
   app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( battery );
 
- 
+  if( elv_am_th1_is_present() )
+  {
+    th1_data_values_t t_th1_data_values = { 0 };
+    elv_am_th1_do_measurements( &t_th1_data_values );
+
+    //APP_LOG( TS_OFF, VLEVEL_L, "Check Value:     %5u %%\r\n", t_th1_data_values.u8_HDC2080_humidity );
+
+    //app_data->Buffer[u8_payload_idx++] = 0x02;                                                            // Datatype: Temperature
+    app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( t_th1_data_values.i16_ntc_temperature >> 8 );      // Temperature [High Byte]
+    app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( t_th1_data_values.i16_ntc_temperature );           // Temperature [Low Byte]
+
+    //app_data->Buffer[u8_payload_idx++] = 0x03;                                                            // Datatype: Temperature + Relative Humidity
+    app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( t_th1_data_values.i16_HDC2080_temperature >> 8 );  // Temperature [High Byte]
+    app_data->Buffer[u8_payload_idx++] = ( uint8_t ) ( t_th1_data_values.i16_HDC2080_temperature );       // Temperature [Low Byte]
+    app_data->Buffer[u8_payload_idx++] = t_th1_data_values.u8_HDC2080_humidity;                           // Relative Humidity
+  }
+
   app_data->BufferSize = u8_payload_idx;  // Watch out! The maximum payload size must not exceed 51 bytes!
 }
 
@@ -200,7 +205,7 @@ void app_on_tx_timer_event_cb( void *context )
 
   base_set_tx_reason( TX_REASON_APP_CYCLE_EVENT );
   base_set_lora_msg_type( LORAMAC_HANDLER_UNCONFIRMED_MSG );
-  
+
   app_cyclic_event();
 }
 
@@ -224,7 +229,7 @@ uint32_t app_get_dutycycle( void )
 void app_exit_stop_mode( void )
 {
   /* Add code here that should be executed after waking up from sleep mode */
-
+  i2c_mod2_init();
 }
 
 void app_enable_irqs( void )
